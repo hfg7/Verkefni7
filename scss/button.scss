@@ -1,0 +1,44 @@
+.button {
+  display: inline-block;
+
+  padding: 10px 15px;
+  margin: 0;
+
+  overflow: hidden;
+
+  font-family: Lato, helvetica, arial, sans-serif;
+  font-size: 3rem;
+  color: #eee;
+
+  text-align: center;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  cursor: pointer;
+  background-color: #666;
+  border: 1px solid #666;
+  border-radius: 2px;
+
+  &:hover {
+    color: #eee;
+    background-color: #333;
+  }
+
+  &__stor {
+
+  }
+
+  &__bar {
+    border-radius: 8px;
+    font-size: 2rem;
+    padding: 5px 5px;
+  }
+
+  &--disabled,
+  &--disabled:hover {
+    color: #999;
+    background-color: #eee;
+    border-color: #eee;
+  }
+}
