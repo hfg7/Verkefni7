@@ -1,22 +1,49 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title>Kaupa</title>
-  </head>
-  <body>
+    <head>
+      <meta charset="utf-8">
+      <title>Forsíða</title>
+      <link rel="stylesheet" href="styles.css">
+      <link rel="stylesheet" href="grid.css">
+    </head>
 
+    <body>
+
+      <header>
+        <nav class="header__bar">
+          <div class="bar--logo">
+            <a href="index.html">Fooþjónustan</a>
+          </div>
+          <div class="bar--menu">
+            <div class="bar--text">
+              <a href="um.html">Um</a>
+            </div>
+            <div class="bar--takki">
+              <a href="kaupa.html" class="button button__bar">Kaupa</a>
+            </div>
+          </div>
+        </nav>
+
+        <div class="header">
+          <div class="header__text">
+            <h1>Kaupa</h1>
+          </div>
+        </div>
+      </header>
+
+<main>
 
   <form method="get" action="kaupa.html">
+
     <div class="personu">
       <h2>Persónuupplýsingar</h2>
-      <div class="nafnkt">
         Nafn:<br>
-        <input type="text" name="nafn" value="Jón Jónsson" required><br>
+        <input type="text" name="nafn" required><br>
         Kennitala:<br>
-      </div>
+        <input type="text" name="kt"  value="123456-7890" required><br>
+
       <div class="ratio">
-        <input type="text" name="name"  value="123456-7890" required><br>
         <label>
           <input type="radio" name="kyn" value="Karl" required> Karl</label><br>
         <label>
@@ -24,10 +51,75 @@
         <label>
           <input type="radio" name="kyn" value="Annað" required> Annað</label><br>
         </div>
-    </div>
 
-    <input type="submit" value="Panta" class="button">
-      </form>
-</fieldset><br/>
+          Sími:<br>
+          <input type="text" name="simi"  value="555-5555" required><br>
+          Heimilisfang:<br>
+          <input type="text" name="heimilisfang" required><br>
+          <label>
+            <input type="checkbox" name="postur" checked>Skrá mig á póstlista
+          </label>
+     </div>
+
+     <div class="greidslu">
+        <h2>Greiðsluupplýsingar</h2>
+          Greiða með:<br>
+          <select class="kort" name="kort">
+            <option value="Kreditkort">Kreditkort</option>
+            <option value="Debitkort">Debitkort</option>
+            <option value="Millifærsla">Millifærsla</option>
+          </select><br>
+        Nafn á korti:<br>
+        <input type="text" name="nafn" required><br>
+        Kortanúmer:<br>
+        <input type="text" name="kortanr"  value="5555-5555-5555-5555" required><br>
+        Gildistími:<br>
+        Mán:
+        <select class="gildis" name="manudur" required>
+           <option value="Jan">1</option>
+           <option value="feb">2</option>
+           <option value="mars">3</option>
+           <option value="april">4</option>
+           <option value="mai">5</option>
+           <option value="jun">6</option>
+           <option value="Jul">7</option>
+           <option value="agu">8</option>
+           <option value="sept">9</option>
+           <option value="okt">10</option>
+           <option value="nov">11</option>
+           <option value="des">12</option>
+       </select>
+       Ár:
+       <select class="gildis" name="ar" required>
+          <option value="2017">2017</option>
+          <option value="2018">2018</option>
+          <option value="2019">2019</option>
+          <option value="2020">2020</option>
+          <option value="2021">2021</option>
+          <option value="2022">2022</option>
+          <option value="2023">2023</option>
+      </select>
+    </div>
+    <input type="submit" value="Panta" class="takki">
+  </form>
+</main>
+
+<footer>
+  <div class="footer">
+     <div class="efri">
+       <p>Fooþjónustan</p>
+       <p>123-4567</p>
+       <p>Opið 12-13 alla daga</p>
+       <p>Bargata 1</p>
+       <p>900 Foobar</p>
+     </div>
+     <div class="nedri">
+       <p>&#169; Fooþjónustan 2017</p>
+     </div>
+   </div>
+</footer>
+
+
+
   </body>
 </html>
