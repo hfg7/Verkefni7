@@ -197,3 +197,34 @@ main {
     color: #999;
     background-color: #eee;
     border-color: #eee; }
+
+    .Texti_heild{
+      margin: 1.5rem;
+    }
+    .Texti_heild p{
+      padding-bottom: 9px;
+      padding-top: 9px;
+    }
+    .Texti_titill{
+      padding-bottom:2rem;
+
+    }
+    .Texti_segdin_heild{
+      display: flex;
+    }
+    .Texti_segdin_heild p{
+      max-width: 40rem;
+    }
+    .Texti_segdin{
+      padding-left: 7rem;
+      padding-right: 2rem;
+      padding-bottom: 4rem;
+      max-width: 70rem;
+      margin: auto;
+    }
+    .Texti_segdin q{
+      font-size: 1.8rem;
+      font-family: open-sans;
+
+
+    }
