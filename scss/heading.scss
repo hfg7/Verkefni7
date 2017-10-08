@@ -4,14 +4,13 @@
   font-family: Merriweather, georgia, serif;
   font-size: 2rem;
 
-  border: $none;
-
   &--one {
     font-size: 3rem;
   }
 
   &--two {
     font-size: 2rem;
+    color: #ddd;
   }
 
   &--three {
