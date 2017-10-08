@@ -42,10 +42,12 @@ main {
   padding-left: 10px; }
   .col-12 {
     width: 100%; }
-  .col-8 {
-    width: 66.66667%; }
+  .col-6 {
+    width: 50%; }
   .col-4 {
-    width: 33.33333%; }
+    width: 33.33333%;
+    display: flex;
+    justify-content: center; }
   @media (max-width: 600px) {
     .col-sm-12 {
       width: 100%; } }
@@ -223,13 +225,7 @@ main {
     border-radius: 4px;
     font-size: 1rem;
     padding: 4px 8px; }
-<<<<<<< HEAD
-  .button--disabled, .button--disabled:hover {
-    color: #999;
-    background-color: #eee;
-    border-color: #eee; }
 
-<<<<<<< HEAD
 .profill {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr; }
@@ -243,37 +239,3 @@ main {
     height: 200px;
     overflow: hidden;
     border-radius: 50%; }
-=======
-    .Texti_heild{
-      margin: 1.5rem;
-    }
-    .Texti_heild p{
-      padding-bottom: 9px;
-      padding-top: 9px;
-    }
-    .Texti_titill{
-      padding-bottom:2rem;
-
-    }
-    .Texti_segdin_heild{
-      display: flex;
-    }
-    .Texti_segdin_heild p{
-      max-width: 40rem;
-    }
-    .Texti_segdin{
-      padding-left: 7rem;
-      padding-right: 2rem;
-      padding-bottom: 4rem;
-      max-width: 70rem;
-      margin: auto;
-    }
-    .Texti_segdin q{
-      font-size: 1.8rem;
-      font-family: open-sans;
-
-
-    }
->>>>>>> cef5e0849015fce72650f9e1f10713c52c47c414
-=======
->>>>>>> b3191459f326a0297f8ad255079ce225b2cb6602

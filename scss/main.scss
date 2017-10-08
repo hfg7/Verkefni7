@@ -1,16 +1,15 @@
-.profill{
-display: grid;
-grid-template-columns: 1fr 1fr 1fr;
 
 
 
 
-  &__content{
+  .profill__content{
     display: flex;
     flex-direction: column;
+
+
   }
 
-  &__img{
+  .profill__img{
     display: inline-block;
     position: relative;
     width: 200px;
@@ -19,7 +18,9 @@ grid-template-columns: 1fr 1fr 1fr;
     border-radius: 50%;
 }
 
-  &__text{
-  
+  .profill__text{
+    display: flex;
+    align-self: center;
+
 }
 }
