@@ -1,6 +1,7 @@
 .footer {
 	background-color: #222;
 	text-align: center;
+	font-style: 'Open Sans', sans-serif;
 
 	&__top {
 		max-width: 600px;
@@ -25,8 +26,8 @@
 	}
 
 	&__bottom {
-		color: #aaa;
+		color: #999;
 		padding: 1rem 0;
-		border-top: solid #999 2px;
+		border-top: solid #999 1px;
 	}
 }
