@@ -187,3 +187,17 @@ main {
     color: #999;
     background-color: #eee;
     border-color: #eee; }
+
+.profill {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; }
+  .profill__content {
+    display: flex;
+    flex-direction: column; }
+  .profill__img {
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%; }
