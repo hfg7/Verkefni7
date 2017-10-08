@@ -4,31 +4,32 @@
   &__index {
     background: transparent url(media/bg.jpg) no-repeat fixed 50% 50%;
     background-size: cover;
-    padding: 18rem 0;
+    height: 100vh;
 
     @media(max-width: 599px) {
       background: transparent url(media/bg.jpg) no-repeat fixed 10% 100%;
-      padding: 8rem 0;
+      height: 70vh;
     }
   }
 
   &__norm {
-    background: transparent url(media/bg-subpage.jpg) no-repeat fixed 50% 50%;
+    background: transparent url(media/bg-subpage.jpg) no-repeat 50% 50%;
     background-size: cover;
-    padding: 12rem 0;
+    height: 50vh;
   }
 
   &__text {
     display: flex;
+    padding: 30vh 0;
     align-items: center;
     flex-direction: column;
     font-family: 'Roboto Slab', serif;
 
     .header--lina1 {
-      font-size: 1.2rem;
+      font-size: 1.5rem;
       font-weight: 300;
       opacity: 1;
-      animation: lina1 1.5s ease-in 1;
+      animation: lina1 1s ease-in 1;
 
         @media(max-width: 599px) {
           font-size: 1rem;
@@ -41,10 +42,10 @@
     }
 
     .header--lina2 {
-      font-size: 2rem;
+      font-size: 2.5rem;
       padding-bottom: 3rem;
       opacity: 0;
-      animation: lina2 1.5s ease-in 1s 1 forwards;
+      animation: lina2 1s ease-in 1s 1 forwards;
 
         @media(max-width: 599px) {
           font-size: 1.5rem;
@@ -58,7 +59,7 @@
 
       .header--button {
         opacity: 0;
-        animation: lina3 1.5s ease-in-out 2s 1 forwards;
+        animation: lina3 1s ease-in-out 2s 1 forwards;
 
         :hover {
           transition: background-color 500ms ease;
