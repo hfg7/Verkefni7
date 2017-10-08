@@ -18,27 +18,28 @@
   cursor: pointer;
   background-color: #666;
   border: 1px solid #666;
-  border-radius: 6px;
+  border-radius: 4px;
 
-  &:hover {
-    color: #eee;
-    background-color: #333;
-  }
+    &:hover {
+      color: #eee;
+      background-color: #222;
+    }
 
-  &__stor {
+    &__front {
 
-  }
+    }
 
-  &__bar {
-    border-radius: 8px;
-    font-size: 2rem;
-    padding: 5px 5px;
-  }
+    &__bar {
+      display: flex;
+      border-radius: 4px;
+      font-size: 1rem;
+      padding: 4px 8px;
+    }
 
-  &--disabled,
-  &--disabled:hover {
-    color: #999;
-    background-color: #eee;
-    border-color: #eee;
-  }
+    &--disabled,
+    &--disabled:hover {
+      color: #999;
+      background-color: #eee;
+      border-color: #eee;
+    }
 }

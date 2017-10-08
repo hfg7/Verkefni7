@@ -1,4 +1,5 @@
 .header {
+  font-family: 'Open Sans', sans-serif;
 
   &__index {
     background: transparent url(media/bg.jpg) no-repeat fixed 50% 50%;
@@ -6,14 +7,8 @@
     padding: 15rem 0em;
   }
 
-  &__kaupa {
+  &__norm {
     background: transparent url(media/bg-subpage.jpg) no-repeat fixed 50% 50%;
-    background-size: cover;
-    padding: 15rem 0em;
-  }
-
-  &__um {
-    background: transparent url(media/image.jpg) no-repeat fixed 50% 50%;
     background-size: cover;
     padding: 15rem 0em;
   }
@@ -28,11 +23,18 @@
 
       h1 {
         font-size: 4rem;
+        font-family: 'Roboto Slab', serif;
+        padding-bottom: 1rem;
       }
 
       h2 {
         font-size: 2rem;
+        font-family: 'Open Sans', sans-serif;
       }
+  }
+
+  &__button:hover {
+    transition: background-color 500ms ease;
   }
 
   &__bar {
@@ -44,8 +46,9 @@
     top: 0;
     left: 0;
     z-index: 2;
-    background-color: rgba(0, 0, 0, 0.70);
-    padding: 0 1rem;
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 0 2rem;
+    border-bottom: solid black 1px;
 
     .bar--menu {
       display: inline-flex;
@@ -55,13 +58,20 @@
       font-size: 1.5rem;
     }
 
-    .bar--takki {
-      padding-left: 2rem;
-      margin: 0 auto;
+    .bar--button {
+      padding-left: 1rem;
+      align-self: center;
+
+      :hover {
+        transition: background-color 500ms ease;
+      }
+        @media(max-width: 400px) {
+          display: none;
+        }
     }
 
     .bar--text {
-      font-size: 2rem;
+      font-size: 1rem;
       text-decoration: none;
       align-self: center;
 
@@ -75,10 +85,11 @@
     }
 
     .bar--logo {
-      font-size: 2rem;
+      font-size: 1.5rem;
+      font-family: 'Roboto Slab', serif;
       float: left;
       align-self: center;
-      font-weight: bolder;
+      font-weight: 600;
 
         a:link {
           text-decoration: none;
