@@ -13,8 +13,6 @@ html {
 
 html {
   /* stylelint-disable-line */
-  margin-right: 20px;
-  margin-left: 20px;
   font-family: Lato, helvetica, arial, sans-serif;
   font-size: 16px;
   line-height: 1.5; }
@@ -52,72 +50,78 @@ main {
     .col-sm-12 {
       width: 100%; } }
 
-.header__index {
-  background: transparent url(media/bg.jpg) no-repeat fixed 50% 50%;
-  background-size: cover;
-  padding: 15rem 0em; }
-
-.header__kaupa {
-  background: transparent url(media/bg-subpage.jpg) no-repeat fixed 50% 50%;
-  background-size: cover;
-  padding: 15rem 0em; }
-
-.header__um {
-  background: transparent url(media/image.jpg) no-repeat fixed 50% 50%;
-  background-size: cover;
-  padding: 15rem 0em; }
-
-.header__text {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  overflow: hidden; }
-  .header__text h1 {
-    font-size: 4rem; }
-  .header__text h2 {
-    font-size: 2rem; }
-
-.header__bar {
-  display: inline-flex;
-  justify-content: space-between;
-  min-width: 100%;
-  min-height: 3rem;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 2;
-  background-color: rgba(0, 0, 0, 0.7);
-  padding: 0 1rem; }
-  .header__bar .bar--menu {
+.header {
+  font-family: 'Open Sans', sans-serif; }
+  .header__index {
+    background: transparent url(media/bg.jpg) no-repeat fixed 50% 50%;
+    background-size: cover;
+    padding: 15rem 0em; }
+  .header__norm {
+    background: transparent url(media/bg-subpage.jpg) no-repeat fixed 50% 50%;
+    background-size: cover;
+    padding: 15rem 0em; }
+  .header__text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    overflow: hidden; }
+    .header__text h1 {
+      font-size: 4rem;
+      font-family: 'Roboto Slab', serif;
+      padding-bottom: 1rem; }
+    .header__text h2 {
+      font-size: 2rem;
+      font-family: 'Open Sans', sans-serif; }
+  .header__button:hover {
+    transition: background-color 500ms ease; }
+  .header__bar {
     display: inline-flex;
     justify-content: space-between;
-    align-items: baseline;
-    float: right;
-    font-size: 1.5rem; }
-  .header__bar .bar--takki {
-    padding-left: 2rem;
-    margin: 0 auto; }
-  .header__bar .bar--text {
-    font-size: 2rem;
-    text-decoration: none;
-    align-self: center; }
-    .header__bar .bar--text a:link {
+    min-width: 100%;
+    min-height: 3rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 0 2rem;
+    border-bottom: solid black 1px; }
+    .header__bar .bar--menu {
+      display: inline-flex;
+      justify-content: space-between;
+      align-items: baseline;
+      float: right;
+      font-size: 1.5rem; }
+    .header__bar .bar--button {
+      padding-left: 1rem;
+      align-self: center; }
+      .header__bar .bar--button :hover {
+        transition: background-color 500ms ease; }
+      @media (max-width: 400px) {
+        .header__bar .bar--button {
+          display: none; } }
+    .header__bar .bar--text {
+      font-size: 1rem;
       text-decoration: none;
-      color: #fff; }
-    .header__bar .bar--text a:visited {
-      color: #fff; }
-  .header__bar .bar--logo {
-    font-size: 2rem;
-    float: left;
-    align-self: center;
-    font-weight: bolder; }
-    .header__bar .bar--logo a:link {
-      text-decoration: none;
-      color: #fff; }
-    .header__bar .bar--logo a:visited {
-      color: #fff; }
+      align-self: center; }
+      .header__bar .bar--text a:link {
+        text-decoration: none;
+        color: #fff; }
+      .header__bar .bar--text a:visited {
+        color: #fff; }
+    .header__bar .bar--logo {
+      font-size: 1.5rem;
+      font-family: 'Roboto Slab', serif;
+      float: left;
+      align-self: center;
+      font-weight: 600; }
+      .header__bar .bar--logo a:link {
+        text-decoration: none;
+        color: #fff; }
+      .header__bar .bar--logo a:visited {
+        color: #fff; }
 
 .footer {
   background-color: #222;
@@ -177,14 +181,15 @@ main {
   cursor: pointer;
   background-color: #666;
   border: 1px solid #666;
-  border-radius: 6px; }
+  border-radius: 4px; }
   .button:hover {
     color: #eee;
-    background-color: #333; }
+    background-color: #222; }
   .button__bar {
-    border-radius: 8px;
-    font-size: 2rem;
-    padding: 5px 5px; }
+    display: flex;
+    border-radius: 4px;
+    font-size: 1rem;
+    padding: 4px 8px; }
   .button--disabled, .button--disabled:hover {
     color: #999;
     background-color: #eee;
