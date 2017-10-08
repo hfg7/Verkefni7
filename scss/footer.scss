@@ -1,0 +1,32 @@
+.footer {
+	background-color: #222;
+	text-align: center;
+
+	&__top {
+		max-width: 600px;
+		display: flex;
+		margin: auto;
+		justify-content: space-around;
+		flex-direction: row;
+		font-size: 1rem;
+		color: #ddd;
+		align-items: center;
+		padding: 1rem 0;
+
+		.footer--left {
+			display: flex;
+			flex-direction: column;
+		}
+
+		.footer--right {
+			display: flex;
+			flex-direction: column;
+		}
+	}
+
+	&__bottom {
+		color: #aaa;
+		padding: 1rem 0;
+		border-top: solid #999 2px;
+	}
+}

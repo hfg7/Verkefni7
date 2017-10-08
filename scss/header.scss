@@ -12,6 +12,12 @@
     padding: 15rem 0em;
   }
 
+  &__um {
+    background: transparent url(media/image.jpg) no-repeat fixed 50% 50%;
+    background-size: cover;
+    padding: 15rem 0em;
+  }
+
   &__text {
     display: flex;
     align-items: center;
@@ -50,7 +56,7 @@
     }
 
     .bar--takki {
-      padding-left: 1rem;
+      padding-left: 2rem;
       margin: 0 auto;
     }
 
@@ -58,12 +64,29 @@
       font-size: 2rem;
       text-decoration: none;
       align-self: center;
+
+      a:link {
+        text-decoration: none;
+        color: #fff;
+      }
+      a:visited {
+        color: #fff
+      }
     }
 
     .bar--logo {
       font-size: 2rem;
       float: left;
       align-self: center;
+      font-weight: bolder;
+
+        a:link {
+          text-decoration: none;
+          color: #fff;
+        }
+        a:visited {
+          color: #fff
+        }
     }
     }
   }
