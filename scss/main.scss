@@ -1,7 +1,7 @@
 .profill{
   display: flex;
   justify-content: center;
-  flex-wrap: nowrap;
+
 
 
 
@@ -23,8 +23,10 @@
 }
 
   &__text{
-
-
-
+    margin: auto;
 }
+  &__text p{
+    font-size: 2rem;
+  }
+
 }
