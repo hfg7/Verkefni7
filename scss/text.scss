@@ -1,8 +1,33 @@
-.text {
-  font-size: 1rem;
+.texti {
+  margin: 1.5rem;
 
-  @media (max-width: $small-scr) {
-    padding-bottom: 1rem;
+  p {
+    padding-bottom: 9px;
+    padding-top: 9px;
   }
 
+  &__titill {
+    padding-bottom:2rem;
+  }
+
+  &__segdin-heild {
+    display: flex;
+  }
+
+  &__segdin-heild p {
+    max-width: 40rem;
+  }
+
+  &__segdin {
+    padding-left: 7rem;
+    padding-right: 2rem;
+    padding-bottom: 4rem;
+    max-width: 70rem;
+    margin: auto;
+  }
+
+  &__segdin q {
+    font-size: 1.8rem;
+    font-family: open-sans;
+ }
 }

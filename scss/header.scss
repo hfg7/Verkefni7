@@ -16,63 +16,15 @@
     background: transparent url(media/bg-subpage.jpg) no-repeat 50% 50%;
     background-size: cover;
     height: 50vh;
+
+    @media(max-width: 599px) {
+      background: transparent url(media/bg-subpage.jpg) no-repeat 10%;
+      background-size: cover;
+      height: 70vh;
+    }
   }
 
-  &__text {
-    display: flex;
-    padding: 30vh 0;
-    align-items: center;
-    flex-direction: column;
-    font-family: 'Roboto Slab', serif;
-
-    .header--lina1 {
-      font-size: 1.5rem;
-      font-weight: 300;
-      opacity: 1;
-      animation: lina1 1s ease-in 1;
-
-        @media(max-width: 599px) {
-          font-size: 1rem;
-        }
-
-      }
-    @keyframes lina1 {
-    	0% {opacity: 0;}
-    	100% {opacity: 1;}
-    }
-
-    .header--lina2 {
-      font-size: 2.5rem;
-      padding-bottom: 3rem;
-      opacity: 0;
-      animation: lina2 1s ease-in 1s 1 forwards;
-
-        @media(max-width: 599px) {
-          font-size: 1.5rem;
-        }
-
-    @keyframes lina2 {
-    	0% {opacity: 0;}
-    	100% {opacity: 1;}
-    }
-    }
-
-      .header--button {
-        opacity: 0;
-        animation: lina3 1s ease-in-out 2s 1 forwards;
-
-        :hover {
-          transition: background-color 500ms ease;
-        }
-      }
-      @keyframes lina3 {
-        0% {opacity: 0;}
-        100% {opacity: 1;}
-      }
-  }
-
-
-  &__bar {
+  .bar {
     display: inline-flex;
     justify-content: space-between;
     min-width: 100%;
@@ -81,17 +33,17 @@
     top: 0;
     left: 0;
     z-index: 2;
-    background-color: rgba(0, 0, 0, 0.85);
+    background-color: rgba(0, 0, 0, 0.80);
     padding: 0 2rem;
     border-bottom: solid black 1px;
 
-    .bar--menu {
+    &__menu {
       display: inline-flex;
       justify-content: space-between;
       font-size: 1.5rem;
     }
 
-    .bar--button {
+    &__button {
       padding-left: 1rem;
       align-self: center;
 
@@ -103,7 +55,7 @@
         }
     }
 
-    .bar--text {
+    &__text {
       font-size: 1rem;
       text-decoration: none;
       align-self: center;
@@ -117,7 +69,7 @@
       }
     }
 
-    .bar--logo {
+    &__logo {
       font-size: 1.5rem;
       font-family: 'Roboto Slab', serif;
       float: left;
