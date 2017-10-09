@@ -1,4 +1,4 @@
-.texti {
+.Texti {
   margin: 1.5rem;
 
   p {
@@ -10,16 +10,16 @@
     padding-bottom:2rem;
   }
 
-  &__segdin-heild {
+  &__segdinheild {
     display: flex;
   }
 
-  &__segdin-heild p {
+  &__segdinheild p {
     max-width: 40rem;
   }
 
   &__segdin {
-    padding-left: 7rem;
+    padding-left: 5rem;
     padding-right: 2rem;
     padding-bottom: 4rem;
     max-width: 70rem;
@@ -30,4 +30,14 @@
     font-size: 1.8rem;
     font-family: open-sans;
  }
+}
+//Allt hérna innan þetta comments eru classar fyrir kaup.html
+.heild{
+  display: flex;
+}
+.personu{
+  margin: auto;
+}
+.greidslu{
+ margin: auto;
 }

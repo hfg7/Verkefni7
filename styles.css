@@ -184,26 +184,35 @@ main {
   100% {
     opacity: 1; } }
 
-.texti {
+.Texti {
   margin: 1.5rem; }
-  .texti p {
+  .Texti p {
     padding-bottom: 9px;
     padding-top: 9px; }
-  .texti__titill {
+  .Texti__titill {
     padding-bottom: 2rem; }
-  .texti__segdin-heild {
+  .Texti__segdinheild {
     display: flex; }
-  .texti__segdin-heild p {
+  .Texti__segdinheild p {
     max-width: 40rem; }
-  .texti__segdin {
-    padding-left: 7rem;
+  .Texti__segdin {
+    padding-left: 5rem;
     padding-right: 2rem;
     padding-bottom: 4rem;
     max-width: 70rem;
     margin: auto; }
-  .texti__segdin q {
+  .Texti__segdin q {
     font-size: 1.8rem;
     font-family: open-sans; }
+
+.heild {
+  display: flex; }
+
+.personu {
+  margin: auto; }
+
+.greidslu {
+  margin: auto; }
 
 .button {
   display: inline-block;
