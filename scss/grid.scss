@@ -28,13 +28,21 @@
     @include columns(4);
   }
 
-  &-sm {
-    @media (max-width: $small-scr) {
+  &-mid {
+    @media (max-width: $width-mid) {
       &-12 {
         @include columns(12);
       }
-
-      // todo útfæra rest af sm grid
+      &-6 {
+        @include columns(6);
+      }
+    }
+  }
+  &-small {
+    @media (max-width: $width-small) {
+      &-12 {
+        @include columns(12);
+      }
     }
   }
 }

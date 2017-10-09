@@ -47,7 +47,12 @@ main {
   .col-4 {
     width: 33.33333%; }
   @media (max-width: 600px) {
-    .col-sm-12 {
+    .col-mid-12 {
+      width: 100%; }
+    .col-mid-6 {
+      width: 50%; } }
+  @media (max-width: 400px) {
+    .col-small-12 {
       width: 100%; } }
 
 .header {
@@ -241,42 +246,75 @@ main {
     border-radius: 4px;
     font-size: 1rem;
     padding: 4px 8px; }
+  .button__long {
+    padding: 10px 100px; }
 
-.profill {
+/*Index síðan.. fyrsti hluti af henni.. 3 punktar og mynd*/
+.padder {
+  padding: 6rem 0; }
+  @media (max-width: 600px) {
+    .padder {
+      padding: 4rem 0; } }
+
+.info-index {
   display: flex;
-<<<<<<< HEAD
-  justify-content: flex-end; }
-=======
-  justify-content: center; }
->>>>>>> 09ca0484c51d66cd449a8b8d334cc98a9a7b2e5a
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%; }
+
+.info {
+  display: flex;
+  flex-direction: row; }
+  .info__check {
+    max-width: 2rem; }
+  .info__text {
+    display: flex;
+    flex-direction: column; }
+  .info__img {
+    max-width: 100%; }
+
+/*Prófílarnir/meðmælendur þrjár einingar*/
+.profill {
+  font-style: 'Open Sans', sans-serif; }
   .profill__content {
     display: flex;
     flex-direction: column;
-    justify-content: space-between; }
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 6rem; }
   .profill__img {
     display: inline-block;
     position: relative;
-    width: 200px;
-    height: 200px;
+    max-width: 75%;
     overflow: hidden;
     border-radius: 50%;
     margin: auto; }
   .profill__text {
-<<<<<<< HEAD
     text-align: center; }
     .profill__text .quote {
       font-style: italic;
       font-weight: bolder;
+      font-size: 1.4rem;
       padding-bottom: 15px;
       padding-top: 15px; }
     .profill__text .nafn {
       font-weight: bold;
-      font-size: 14px; }
+      font-size: 1rem; }
     .profill__text .lengd {
-      font-size: 12px;
+      font-size: 0.8rem;
       color: #808080; }
-=======
+
+/*kaupatakkinn neðst á index ásamt heading*/
+.buy {
+  margin: auto;
+  display: flex;
+  padding-bottom: 3rem; }
+  .buy__content {
     margin: auto; }
-  .profill__text p {
-    font-size: 2rem; }
->>>>>>> 09ca0484c51d66cd449a8b8d334cc98a9a7b2e5a
+  .buy__text {
+    padding-bottom: 3rem;
+    font-family: 'Roboto Slab', serif;
+    font-size: 2rem;
+    font-weight: bold; }
+  .buy__button {
+    align-self: center; }

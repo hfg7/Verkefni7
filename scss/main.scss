@@ -1,46 +1,101 @@
+/*Index síðan.. fyrsti hluti af henni.. 3 punktar og mynd*/
+.padder {
+    padding: 6rem 0;
+
+     @media(max-width: 600px) {
+       padding: 4rem 0;
+     }
+  }
+
+  .info-index {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: row;
+
+    &__check {
+      max-width: 2rem;
+    }
+
+    &__text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__img {
+      max-width: 100%;
+    }
+  }
+
+/*Prófílarnir/meðmælendur þrjár einingar*/
+
 .profill {
-  display: flex;
-  justify-content: flex-end;
-
-
-
+  font-style: 'Open Sans', sans-serif;
 
   &__content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
-}
+    width: 100%;
+    padding-bottom: 6rem;
+  }
 
   &__img {
     display: inline-block;
     position: relative;
-    width: 200px;
-    height: 200px;
+    max-width: 75%;
     overflow: hidden;
     border-radius: 50%;
     margin: auto;
-}
+  }
 
   &__text {
-
     text-align: center;
 
+    .quote {
+      font-style: italic;
+      font-weight: bolder;
+      font-size: 1.4rem;
+      padding-bottom: 15px;
+      padding-top: 15px;
+    }
 
- .quote {
-  font-style: italic;
-  font-weight: bolder;
-  padding-bottom: 15px;
-  padding-top: 15px;
+    .nafn {
+      font-weight: bold;
+      font-size: 1rem;
+    }
 
+    .lengd {
+      font-size: 0.8rem;
+      color: #808080;
+    }
+  }
 }
-.nafn {
-  font-weight: bold;
-  font-size: 14px;
-}
-.lengd {
-  font-size: 12px;
-  color: #808080;
-}
+
+/*kaupatakkinn neðst á index ásamt heading*/
+
+.buy {
+  margin: auto;
+  display: flex;
+  padding-bottom: 3rem;
+
+  &__content {
+    margin: auto;
+  }
+
+  &__text {
+    padding-bottom: 3rem;
+    font-family: 'Roboto Slab', serif;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  &__button {
+    align-self: center;
   }
 }
