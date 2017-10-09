@@ -5,13 +5,16 @@
   &__cover {
     font-size: 4rem;
     color: #fff;
-    padding-left: 2rem;
+    padding-left: 5vw;
     padding-top: 20vh;
   }
 
   &__element {
     font-size: 4rem;
     border-bottom: solid #999 1px;
+    font-family: monospace;
+    color: #363;
+    padding-top: 5rem;
   }
 
   &__front-head1 {
@@ -21,7 +24,7 @@
     animation: lina1 1s ease-in 1;
 
       @media(max-width: 599px) {
-        font-size: 1rem;
+        font-size: 1.5rem;
       }
 
         @keyframes lina1 {
@@ -37,7 +40,7 @@
     animation: lina2 1s ease-in 1s 1 forwards;
 
       @media(max-width: 599px) {
-        font-size: 1.5rem;
+        font-size: 3rem;
       }
 
         @keyframes lina2 {

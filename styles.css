@@ -29,6 +29,9 @@ main {
   max-width: 1200px;
   margin: 0 auto;
   overflow-x: hidden; }
+  @media (max-width: 600px) {
+    main {
+      padding: 0 20px; } }
 
 .row {
   display: flex;
@@ -56,10 +59,12 @@ main {
       width: 100%; } }
 
 .header {
-  font-family: 'Open Sans', sans-serif; }
+  font-family: 'Open Sans', sans-serif;
+  padding: 0; }
   .header__index {
     background: transparent url(media/bg.jpg) no-repeat fixed 50% 50%;
     background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.2);
     height: 100vh; }
     @media (max-width: 599px) {
       .header__index {
@@ -68,7 +73,8 @@ main {
   .header__norm {
     background: transparent url(media/bg-subpage.jpg) no-repeat 50% 50%;
     background-size: cover;
-    height: 50vh; }
+    box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.2);
+    height: 55vh; }
     @media (max-width: 599px) {
       .header__norm {
         background: transparent url(media/bg-subpage.jpg) no-repeat 10%;
@@ -150,11 +156,14 @@ main {
   .heading__cover {
     font-size: 4rem;
     color: #fff;
-    padding-left: 2rem;
+    padding-left: 5vw;
     padding-top: 20vh; }
   .heading__element {
     font-size: 4rem;
-    border-bottom: solid #999 1px; }
+    border-bottom: solid #999 1px;
+    font-family: monospace;
+    color: #363;
+    padding-top: 5rem; }
   .heading__front-head1 {
     font-size: 2rem;
     font-weight: 400;
@@ -162,7 +171,7 @@ main {
     animation: lina1 1s ease-in 1; }
     @media (max-width: 599px) {
       .heading__front-head1 {
-        font-size: 1rem; } }
+        font-size: 1.5rem; } }
 
 @keyframes lina1 {
   0% {
@@ -176,7 +185,7 @@ main {
     animation: lina2 1s ease-in 1s 1 forwards; }
     @media (max-width: 599px) {
       .heading__front-head2 {
-        font-size: 1.5rem; } }
+        font-size: 3rem; } }
 
 @keyframes lina2 {
   0% {
@@ -283,17 +292,22 @@ main {
 .info {
   display: flex;
   flex-direction: row; }
+  @media (max-width: 600px) {
+    .info {
+      padding: 2rem 0; } }
   .info__check {
-    max-width: 2rem; }
+    width: 5%; }
   .info__text {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    width: 95%; }
   .info__img {
     max-width: 100%; }
 
 /*Prófílarnir/meðmælendur þrjár einingar*/
 .profill {
-  font-style: 'Open Sans', sans-serif; }
+  font-style: 'Open Sans', sans-serif;
+  border: solid blue 5px; }
   .profill__content {
     display: flex;
     flex-direction: column;
@@ -336,8 +350,8 @@ main {
     font-family: 'Roboto Slab', serif;
     font-size: 2rem;
     font-weight: bold; }
+    @media (max-width: 600px) {
+      .buy__text {
+        font-size: 1.6rem; } }
   .buy__button {
     display: flex; }
-
-.elements {
-  padding: 5rem 0; }
