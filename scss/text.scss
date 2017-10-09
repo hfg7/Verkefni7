@@ -34,10 +34,19 @@
 //Allt hérna innan þetta comments eru classar fyrir kaup.html
 .heild{
   display: flex;
+  margin: 4rem;
 }
 .personu{
   margin: auto;
 }
 .greidslu{
  margin: auto;
+ padding: 6rem;
+}
+.takki__panta{
+width: 100%;
+max-width: 7rem;
+height: 100%;
+margin: auto;
+align-items: center;
 }
