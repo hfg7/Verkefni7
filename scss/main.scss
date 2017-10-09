@@ -1,26 +1,30 @@
+.profill{
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
 
 
 
-
-  .profill__content{
+  &__content{
     display: flex;
     flex-direction: column;
 
 
   }
 
-  .profill__img{
+  &__img{
     display: inline-block;
     position: relative;
     width: 200px;
     height: 200px;
     overflow: hidden;
     border-radius: 50%;
+    margin: auto;
 }
 
-  .profill__text{
-    display: flex;
-    align-self: center;
+  &__text{
+
+
 
 }
 }

@@ -26,8 +26,6 @@
 
   &-4 {
     @include columns(4);
-    display: flex;
-    justify-content: center;
   }
 
   &-sm {
