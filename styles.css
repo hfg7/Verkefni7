@@ -259,6 +259,9 @@ main {
     padding: 4px 8px; }
   .button__long {
     padding: 15px 100px; }
+  .button__order {
+    padding: 10px 120px;
+    font-size: 1.2rem; }
 
 /* staðsetning fyrir animation textan í headernum*/
 .heading--index {
