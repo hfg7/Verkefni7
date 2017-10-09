@@ -4,32 +4,34 @@
 
   &__cover {
     font-size: 4rem;
-    color: #ddd;
+    color: #fff;
     padding-left: 2rem;
     padding-top: 20vh;
   }
-}
 
-.heading--index {
-  display: flex;
-  padding-top: 25vh;
-  align-items: center;
-  flex-direction: column;
-  font-family: 'Roboto Slab', serif;
+  &__element {
+    font-size: 4rem;
+    border-bottom: solid #999 1px;
+  }
 
-  &__lina1 {
-    font-size: 1.5rem;
-    font-weight: 300;
+  &__front-head1 {
+    font-size: 2rem;
+    font-weight: 400;
     opacity: 1;
     animation: lina1 1s ease-in 1;
 
       @media(max-width: 599px) {
         font-size: 1rem;
       }
-    }
 
-  &__lina2 {
-    font-size: 2.5rem;
+        @keyframes lina1 {
+          0% {opacity: 0;}
+          100% {opacity: 1;}
+        }
+  }
+
+  &__front-head2 {
+    font-size: 4rem;
     padding-bottom: 3rem;
     opacity: 0;
     animation: lina2 1s ease-in 1s 1 forwards;
@@ -37,27 +39,10 @@
       @media(max-width: 599px) {
         font-size: 1.5rem;
       }
-  }
 
-  &__button {
-    opacity: 0;
-    animation: lina3 1s ease-in-out 2s 1 forwards;
-
-    :hover {
-      transition: background-color 500ms ease;
-    }
-  }
-
-  @keyframes lina1 {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-  }
-  @keyframes lina2 {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-  }
-  @keyframes lina3 {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
+        @keyframes lina2 {
+          0% {opacity: 0;}
+          100% {opacity: 1;}
+        }
   }
 }

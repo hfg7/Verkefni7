@@ -1,7 +1,7 @@
 .button {
   display: inline-block;
 
-  padding: 3px 15px;
+  padding: 6px 20px;
   margin: 0;
 
   overflow: hidden;
@@ -23,20 +23,27 @@
     &:hover {
       color: #eee;
       background-color: #222;
+      transition: background-color 500ms ease;
     }
 
     &__front {
-      font-size: 3rem;
+      font-size: 2.5rem;
+      opacity: 0;
+      animation: lina3 1s ease-in-out 2s 1 forwards;
+
+        @keyframes lina3 {
+          0% {opacity: 0;}
+          100% {opacity: 1;}
+        }
     }
 
     &__bar {
-      display: flex;
       border-radius: 4px;
       font-size: 1rem;
       padding: 4px 8px;
     }
 
     &__long {
-      padding: 10px 100px;
+      padding: 15px 100px;
     }
 }

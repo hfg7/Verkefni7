@@ -1,3 +1,12 @@
+/* staðsetning fyrir animation textan í headernum*/
+
+.heading--index {
+  display: flex;
+  padding-top: 25vh;
+  align-items: center;
+  flex-direction: column;
+}
+
 /*Index síðan.. fyrsti hluti af henni.. 3 punktar og mynd*/
 .padder {
     padding: 6rem 0;
@@ -81,21 +90,30 @@
 
 .buy {
   margin: auto;
-  display: flex;
-  padding-bottom: 3rem;
+  padding-bottom: 6rem;
 
   &__content {
-    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   &__text {
-    padding-bottom: 3rem;
+    padding-bottom: 1.6rem;
     font-family: 'Roboto Slab', serif;
     font-size: 2rem;
     font-weight: bold;
   }
 
   &__button {
-    align-self: center;
+    display: flex;
+  }
+}
+
+.elements {
+  padding: 5rem 0;
+
+  &__buttons {
   }
 }
