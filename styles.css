@@ -194,30 +194,24 @@ main {
   100% {
     opacity: 1; } }
 
-.text {
-  font-size: 1rem; }
-  @media (max-width: 600px) {
-    .text {
-      padding-bottom: 1rem; } }
-
-.Texti {
+.texti {
   margin: 1.5rem; }
-  .Texti p {
+  .texti p {
     padding-bottom: 9px;
     padding-top: 9px; }
-  .Texti__titill {
+  .texti__titill {
     padding-bottom: 2rem; }
-  .Texti__segdin-heild {
+  .texti__segdin-heild {
     display: flex; }
-  .Texti__segdin-heild p {
+  .texti__segdin-heild p {
     max-width: 40rem; }
-  .Texti__segdin {
+  .texti__segdin {
     padding-left: 7rem;
     padding-right: 2rem;
     padding-bottom: 4rem;
     max-width: 70rem;
     margin: auto; }
-  .Texti__segdin q {
+  .texti__segdin q {
     font-size: 1.8rem;
     font-family: open-sans; }
 
