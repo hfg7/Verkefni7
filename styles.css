@@ -128,7 +128,11 @@ main {
 .footer {
   font-style: "Open Sans", sans-serif;
   text-align: center;
-  background-color: #222; }
+  background-color: #222;
+  margin-top: 6rem; }
+  @media (max-width: 600px) {
+    .footer {
+      margin-top: 4rem; } }
   .footer__top {
     display: flex;
     max-width: 600px;
@@ -158,10 +162,10 @@ main {
     margin: 0 auto;
     padding-top: 20vh;
     padding-left: 20px;
-    font-size: 4rem;
+    font-size: 3.5rem;
     color: #fff; }
   .heading__about {
-    padding-top: 5rem; }
+    padding-bottom: 2rem; }
   .heading__element {
     padding-top: 5rem;
     font-family: monospace;
@@ -197,50 +201,25 @@ main {
   100% {
     opacity: 1; } }
 
-.text {
+.text__half {
   display: flex;
   flex-direction: column;
-  font-size: 1rem;
+  justify-content: center;
+  min-height: 100%; }
+  @media (max-width: 600px) {
+    .text__half {
+      justify-content: flex-start;
+      max-height: 50%; } }
+
+.text__quote {
+  display: flex;
   font-family: "Open Sans", sans-serif;
-  /*  p {
-    padding-top: 9px;
-    padding-bottom: 9px;
-  }
+  font-size: 1.8rem;
+  font-style: italic; }
 
-  &__titill {
-    padding-bottom: 2rem;
-  }
-
-  &__segdinheild {
-    //display: flex;
-  }
-
-  &__segdinheild p {
-    //max-width: 40rem;
-  }
-
-  &__segdin {
-    //max-width: 70rem;
-    //padding-bottom: 4rem;
-    //padding-right: 2rem;
-    //padding-left: 5rem;
-  //  margin: auto;
-  }
-
-  &__segdin q {
-    font-family: "Open Sans", sans-serif;
-    font-size: 1.8rem;
-  }*/ }
-  .text__merage {
-    display: inline-flex; }
-  .text p {
-    border: solid green 3px; }
-  .text blockquote {
-    position: absolute;
-    width: 600px;
-    font-size: 1.5rem;
-    font-style: italic;
-    border: solid purple 3px; }
+.text p {
+  padding-top: 9px;
+  padding-bottom: 9px; }
 
 .heild {
   display: flex;
@@ -308,11 +287,11 @@ main {
   flex-direction: column; }
 
 /* Index síðan.. fyrsti hluti af henni.. 3 punktar og mynd */
-.padder {
-  padding: 6rem 0; }
+section {
+  margin-top: 6rem; }
   @media (max-width: 600px) {
-    .padder {
-      padding: 4rem 0; } }
+    section {
+      margin-top: 4rem; } }
 
 .info-index {
   display: flex;
@@ -325,7 +304,7 @@ main {
   flex-direction: row; }
   @media (max-width: 600px) {
     .info {
-      padding: 2rem 0; } }
+      margin: 2rem 0; } }
   .info__check {
     width: 5%; }
   .info__text {
@@ -334,16 +313,23 @@ main {
     flex-direction: column; }
   .info__img {
     max-width: 100%; }
+    @media (max-width: 600px) {
+      .info__img {
+        margin-top: 2rem; } }
 
 /* Prófílarnir/meðmælendur þrjár einingar */
 .profill {
   font-style: "Open Sans", sans-serif; }
   .profill__content {
+    margin-top: 6rem;
     display: flex;
-    padding-bottom: 6rem;
     flex-direction: column;
     justify-content: space-between; }
+    @media (max-width: 600px) {
+      .profill__content {
+        margin-top: 4rem; } }
   .profill__img {
+    display: inline-grid;
     max-width: 75%;
     margin: auto;
     overflow: hidden;
@@ -351,8 +337,8 @@ main {
   .profill__text {
     text-align: center; }
     .profill__text .quote {
-      padding-top: 15px;
-      padding-bottom: 15px;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
       font-size: 1.4rem;
       font-style: italic;
       font-weight: bolder; }
@@ -365,7 +351,6 @@ main {
 
 /* kaupatakkinn neðst á index ásamt heading */
 .buy {
-  padding-bottom: 6rem;
   margin: auto; }
   .buy__content {
     display: flex;

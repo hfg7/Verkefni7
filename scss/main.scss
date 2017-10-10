@@ -8,11 +8,11 @@
 }
 
 /* Index síðan.. fyrsti hluti af henni.. 3 punktar og mynd */
-.padder {
-  padding: 6rem 0;
+section {
+  margin-top: 6rem;
 
-  @media (max-width: 600px) {
-    padding: 4rem 0;
+  @media (max-width: $width-mid) {
+    margin-top: 4rem;
   }
 }
 
@@ -28,7 +28,7 @@
   flex-direction: row;
 
   @media (max-width: $width-mid) {
-    padding: 2rem 0;
+    margin: 2rem 0;
   }
 
   &__check {
@@ -43,6 +43,10 @@
 
   &__img {
     max-width: 100%;
+
+    @media (max-width: $width-mid) {
+      margin-top: 2rem;
+    }
   }
 }
 
@@ -52,13 +56,18 @@
   font-style: "Open Sans", sans-serif;
 
   &__content {
+    margin-top: 6rem;
     display: flex;
-    padding-bottom: 6rem;
     flex-direction: column;
     justify-content: space-between;
+
+    @media (max-width: 600px) {
+      margin-top: 4rem;
+    }
   }
 
   &__img {
+    display: inline-grid;
     max-width: 75%;
     margin: auto;
     overflow: hidden;
@@ -69,8 +78,8 @@
     text-align: center;
 
     .quote {
-      padding-top: 15px;
-      padding-bottom: 15px;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
       font-size: 1.4rem;
       font-style: italic;
       font-weight: bolder;
@@ -91,7 +100,6 @@
 /* kaupatakkinn neðst á index ásamt heading */
 
 .buy {
-  padding-bottom: 6rem;
   margin: auto;
 
   &__content {

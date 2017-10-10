@@ -2,6 +2,11 @@
   font-style: "Open Sans", sans-serif;
   text-align: center;
   background-color: #222;
+  margin-top: 6rem;
+
+  @media (max-width: $width-mid) {
+    margin-top: 4rem;
+  }
 
   &__top {
     display: flex;

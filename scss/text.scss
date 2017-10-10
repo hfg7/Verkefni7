@@ -1,36 +1,30 @@
-.Texti {
-  margin: 1.5rem;
+.text {
+
+  &__half {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100%;
+
+    @media (max-width: 600px) {
+      justify-content: flex-start;
+      max-height: 50%;
+    }
+  }
+
+  &__quote {
+    display: flex;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.8rem;
+    font-style: italic;
+}
 
   p {
     padding-top: 9px;
     padding-bottom: 9px;
   }
-
-  &__titill {
-    padding-bottom: 2rem;
-  }
-
-  &__segdinheild {
-    display: flex;
-  }
-
-  &__segdinheild p {
-    max-width: 40rem;
-  }
-
-  &__segdin {
-    max-width: 70rem;
-    padding-bottom: 4rem;
-    padding-right: 2rem;
-    padding-left: 5rem;
-    margin: auto;
-  }
-
-  &__segdin q {
-    font-family: "Open Sans", sans-serif;
-    font-size: 1.8rem;
-  }
 }
+
 //Allt hérna innan þetta comments eru classar fyrir kaup.html
 .heild {
   display: flex;
