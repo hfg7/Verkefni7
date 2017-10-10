@@ -33,11 +33,14 @@
       &-12 {
         @include columns(12);
       }
+
       &-6 {
         @include columns(6);
+        margin: 0 auto;
       }
     }
   }
+
   &-small {
     @media (max-width: $width-small) {
       &-12 {
@@ -45,8 +48,4 @@
       }
     }
   }
-}
-
-.offset {
-  // todo útfæra offset
 }

@@ -2,12 +2,12 @@
   margin: 1.5rem;
 
   p {
-    padding-bottom: 9px;
     padding-top: 9px;
+    padding-bottom: 9px;
   }
 
   &__titill {
-    padding-bottom:2rem;
+    padding-bottom: 2rem;
   }
 
   &__segdinheild {
@@ -19,20 +19,20 @@
   }
 
   &__segdin {
-    padding-left: 5rem;
-    padding-right: 2rem;
-    padding-bottom: 4rem;
     max-width: 70rem;
+    padding-bottom: 4rem;
+    padding-right: 2rem;
+    padding-left: 5rem;
     margin: auto;
   }
 
   &__segdin q {
+    font-family: "Open Sans", sans-serif;
     font-size: 1.8rem;
-    font-family: open-sans;
- }
+  }
 }
 //Allt hérna innan þetta comments eru classar fyrir kaup.html
-.heild{
+.heild {
   display: flex;
   margin: 4rem;
 }
