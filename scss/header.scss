@@ -1,91 +1,91 @@
 .header {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  padding: 0;
 
   &__index {
-    height: 100vh;
-    background: transparent url("media/bg.jpg") no-repeat fixed 50% 50%;
+    background: transparent url(media/bg.jpg) no-repeat fixed 50% 50%;
     background-size: cover;
     box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.2);
+    height: 100vh;
 
-    @media (max-width: 599px) {
+    @media(max-width: 599px) {
+      background: transparent url(media/bg.jpg) no-repeat fixed 10% 100%;
       height: 70vh;
-      background: transparent url("media/bg.jpg") no-repeat fixed 10% 100%;
     }
   }
 
   &__norm {
-    height: 55vh;
-    background: transparent url("media/bg-subpage.jpg") no-repeat 50% 50%;
+    background: transparent url(media/bg-subpage.jpg) no-repeat 50% 50%;
     background-size: cover;
     box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.2);
+    height: 55vh;
 
-    @media (max-width: 599px) {
-      height: 70vh;
-      background: transparent url("media/bg-subpage.jpg") no-repeat 10%;
+    @media(max-width: 599px) {
+      background: transparent url(media/bg-subpage.jpg) no-repeat 10%;
       background-size: cover;
+      height: 70vh;
     }
   }
 }
 
-.bar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 2;
-  display: inline-flex;
-  justify-content: space-between;
-
-  min-width: 100%;
-  min-height: 3rem;
-  padding: 0 2rem;
-  background-color: rgba(0, 0, 0, 0.80);
-  border-bottom: solid #333 1px;
-
-  &__menu {
+  .bar {
     display: inline-flex;
     justify-content: space-between;
-    font-size: 1.5rem;
-  }
+    min-width: 100%;
+    min-height: 3rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.80);
+    padding: 0 2rem;
+    border-bottom: solid black 1px;
 
-  &__button {
-    display: flex;
-    padding-left: 1rem;
-    align-self: center;
-
-    @media (max-width: 400px) {
-      display: none;
+    &__menu {
+      display: inline-flex;
+      justify-content: space-between;
+      font-size: 1.5rem;
     }
-  }
 
-  &__text {
-    font-size: 1rem;
-    text-decoration: none;
-    align-self: center;
+    &__button {
+      display: flex;
+      padding-left: 1rem;
+      align-self: center;
 
-    a:link {
-      color: #fff;
+        @media(max-width: 400px) {
+          display: none;
+        }
+    }
+
+    &__text {
+      font-size: 1rem;
       text-decoration: none;
+      align-self: center;
+
+      a:link {
+        text-decoration: none;
+        color: #fff;
+      }
+
+      a:visited {
+        color: #fff
+      }
     }
 
-    a:visited {
-      color: #fff;
-    }
-  }
+    &__logo {
+      font-size: 1.5rem;
+      font-family: 'Roboto Slab', serif;
+      float: left;
+      align-self: center;
+      font-weight: 600;
 
-  &__logo {
-    float: left;
-    font-family: "Roboto Slab", serif;
-    font-size: 1.5rem;
-    align-self: center;
-    font-weight: 600;
+      a:link {
+        text-decoration: none;
+        color: #fff;
+      }
 
-    a:link {
-      color: #fff;
-      text-decoration: none;
+      a:visited {
+        color: #fff
+        }
     }
-
-    a:visited {
-      color: #fff;
-    }
-  }
 }

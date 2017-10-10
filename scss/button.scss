@@ -6,7 +6,7 @@
 
   overflow: hidden;
 
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 2rem;
   color: #eee;
 
@@ -20,6 +20,7 @@
   border: 1px solid #666;
   border-radius: 4px;
 
+<<<<<<< HEAD
   &:hover {
     color: #eee;
     background-color: #222;
@@ -42,13 +43,37 @@
     font-size: 1rem;
     border-radius: 4px;
   }
+=======
+    &:hover {
+      color: #eee;
+      background-color: #222;
+      transition: background-color 500ms ease;
+    }
 
-  &__long {
-    padding: 15px 100px;
-  }
+    &__front {
+      font-size: 2.5rem;
+      opacity: 0;
+      animation: lina3 1s ease-in-out 2s 1 forwards;
 
-  &__order {
-    padding: 10px 120px;
-    font-size: 1.2rem;
-  }
+        @keyframes lina3 {
+          0% {opacity: 0;}
+          100% {opacity: 1;}
+        }
+    }
+
+    &__bar {
+      border-radius: 4px;
+      font-size: 1rem;
+      padding: 4px 8px;
+    }
+>>>>>>> parent of d163c61... lagaði conflicts ekkert merkilegt allt er á sínum stað
+
+    &__long {
+      padding: 15px 100px;
+    }
+
+    &__order {
+      padding: 4px 80px;
+      font-size: 1.2rem;
+    }
 }
