@@ -59,10 +59,12 @@
   }
 
   &__img {
+    display: inline-grid;
     max-width: 75%;
     margin: auto;
     overflow: hidden;
     border-radius: 50%;
+
   }
 
   &__text {
