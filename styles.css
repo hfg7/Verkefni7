@@ -1,3 +1,198 @@
+@charset "UTF-8";
+/* setjum box-sizing: border-box; á allt */
+html {
+  /* stylelint-disable-line */
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  /* stylelint-disable-line */
+  box-sizing: inherit;
+  /* fjarlægjum margin og padding */
+  padding: 0;
+  margin: 0; }
+
+html {
+  /* stylelint-disable-line */
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.5; }
+  @media (min-width: 1200px) {
+    html {
+      margin: 0; } }
+
+img {
+  /* stylelint-disable-line */
+  max-width: 100%; }
+
+main {
+  /* stylelint-disable-line */
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow-x: hidden; }
+  @media (max-width: 600px) {
+    main {
+      padding: 0 20px; } }
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -10px;
+  margin-bottom: 20px;
+  margin-left: -10px; }
+
+.col {
+  padding-right: 10px;
+  padding-left: 10px; }
+  .col-12 {
+    width: 100%; }
+  .col-6 {
+    width: 50%; }
+  .col-4 {
+    width: 33.33333%; }
+  @media (max-width: 600px) {
+    .col-mid-12 {
+      width: 100%; }
+    .col-mid-6 {
+      width: 50%; } }
+  @media (max-width: 400px) {
+    .col-small-12 {
+      width: 100%; } }
+
+.header {
+  font-family: 'Open Sans', sans-serif;
+  padding: 0; }
+  .header__index {
+    background: transparent url(media/bg.jpg) no-repeat fixed 50% 50%;
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.2);
+    height: 100vh; }
+    @media (max-width: 599px) {
+      .header__index {
+        background: transparent url(media/bg.jpg) no-repeat fixed 10% 100%;
+        height: 70vh; } }
+  .header__norm {
+    background: transparent url(media/bg-subpage.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.2);
+    height: 55vh; }
+    @media (max-width: 599px) {
+      .header__norm {
+        background: transparent url(media/bg-subpage.jpg) no-repeat 10%;
+        background-size: cover;
+        height: 70vh; } }
+
+.bar {
+  display: inline-flex;
+  justify-content: space-between;
+  min-width: 100%;
+  min-height: 3rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 0 2rem;
+  border-bottom: solid black 1px; }
+  .bar__menu {
+    display: inline-flex;
+    justify-content: space-between;
+    font-size: 1.5rem; }
+  .bar__button {
+    display: flex;
+    padding-left: 1rem;
+    align-self: center; }
+    @media (max-width: 400px) {
+      .bar__button {
+        display: none; } }
+  .bar__text {
+    font-size: 1rem;
+    text-decoration: none;
+    align-self: center; }
+    .bar__text a:link {
+      text-decoration: none;
+      color: #fff; }
+    .bar__text a:visited {
+      color: #fff; }
+  .bar__logo {
+    font-size: 1.5rem;
+    font-family: 'Roboto Slab', serif;
+    float: left;
+    align-self: center;
+    font-weight: 600; }
+    .bar__logo a:link {
+      text-decoration: none;
+      color: #fff; }
+    .bar__logo a:visited {
+      color: #fff; }
+
+.footer {
+  background-color: #222;
+  text-align: center;
+  font-style: 'Open Sans', sans-serif; }
+  .footer__top {
+    max-width: 600px;
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    flex-direction: row;
+    font-size: 1rem;
+    color: #ddd;
+    align-items: center;
+    padding: 1rem 0; }
+    .footer__top .footer--left {
+      display: flex;
+      flex-direction: column; }
+    .footer__top .footer--right {
+      display: flex;
+      flex-direction: column; }
+  .footer__bottom {
+    color: #999;
+    padding: 1rem 0;
+    border-top: solid #999 1px; }
+
+.heading {
+  font-family: 'Roboto Slab', serif;
+  word-break: break-all; }
+  .heading__cover {
+    font-size: 4rem;
+    color: #fff;
+    padding-left: 5vw;
+    padding-top: 20vh; }
+  .heading__element {
+    font-size: 4rem;
+    border-bottom: solid #999 1px;
+    font-family: monospace;
+    color: #363;
+    padding-top: 5rem; }
+  .heading__front-head1 {
+    font-size: 2rem;
+    font-weight: 400;
+    opacity: 1;
+    animation: lina1 1s ease-in 1; }
+    @media (max-width: 599px) {
+      .heading__front-head1 {
+        font-size: 1.5rem; } }
+
+@keyframes lina1 {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+  .heading__front-head2 {
+    font-size: 4rem;
+    padding-bottom: 3rem;
+    opacity: 0;
+    animation: lina2 1s ease-in 1s 1 forwards; }
+    @media (max-width: 599px) {
+      .heading__front-head2 {
+        font-size: 3rem; } }
+
+@keyframes lina2 {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
 .Texti {
   margin: 1.5rem; }
   .Texti p {
@@ -51,6 +246,7 @@
 
 .valid select {
   max-width: 60px; }
+<<<<<<< HEAD
 ty: 0; }
   100% {
     opacity: 1; } }
@@ -92,3 +288,132 @@ on: fixed;
       color: #fff; }
     .bar__logo a:visited {
       color: #fff; }
+=======
+
+.button {
+  display: inline-block;
+  padding: 6px 20px;
+  margin: 0;
+  overflow: hidden;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2rem;
+  color: #eee;
+  text-align: center;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+  background-color: #666;
+  border: 1px solid #666;
+  border-radius: 4px; }
+  .button:hover {
+    color: #eee;
+    background-color: #222;
+    transition: background-color 500ms ease; }
+  .button__front {
+    font-size: 2.5rem;
+    opacity: 0;
+    animation: lina3 1s ease-in-out 2s 1 forwards; }
+
+@keyframes lina3 {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+  .button__bar {
+    border-radius: 4px;
+    font-size: 1rem;
+    padding: 4px 8px; }
+  .button__long {
+    padding: 15px 100px; }
+  .button__order {
+    padding: 4px 80px;
+    font-size: 1.2rem; }
+
+/* staðsetning fyrir animation textan í headernum*/
+.heading--index {
+  display: flex;
+  padding-top: 25vh;
+  align-items: center;
+  flex-direction: column; }
+
+/*Index síðan.. fyrsti hluti af henni.. 3 punktar og mynd*/
+.padder {
+  padding: 6rem 0; }
+  @media (max-width: 600px) {
+    .padder {
+      padding: 4rem 0; } }
+
+.info-index {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%; }
+
+.info {
+  display: flex;
+  flex-direction: row; }
+  @media (max-width: 600px) {
+    .info {
+      padding: 2rem 0; } }
+  .info__check {
+    width: 5%; }
+  .info__text {
+    display: flex;
+    flex-direction: column;
+    width: 95%; }
+  .info__img {
+    max-width: 100%; }
+
+/*Prófílarnir/meðmælendur þrjár einingar*/
+.profill {
+  font-style: 'Open Sans', sans-serif;
+  border: solid blue 5px; }
+  .profill__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 6rem; }
+  .profill__img {
+    display: inline-block;
+    position: relative;
+    max-width: 75%;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: auto; }
+  .profill__text {
+    text-align: center; }
+    .profill__text .quote {
+      font-style: italic;
+      font-weight: bolder;
+      font-size: 1.4rem;
+      padding-bottom: 15px;
+      padding-top: 15px; }
+    .profill__text .nafn {
+      font-weight: bold;
+      font-size: 1rem; }
+    .profill__text .lengd {
+      font-size: 0.8rem;
+      color: #808080; }
+
+/*kaupatakkinn neðst á index ásamt heading*/
+.buy {
+  margin: auto;
+  padding-bottom: 6rem; }
+  .buy__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .buy__text {
+    padding-bottom: 1.6rem;
+    font-family: 'Roboto Slab', serif;
+    font-size: 2rem;
+    font-weight: bold; }
+    @media (max-width: 600px) {
+      .buy__text {
+        font-size: 1.6rem; } }
+  .buy__button {
+    display: flex; }
+>>>>>>> parent of d163c61... lagaði conflicts ekkert merkilegt allt er á sínum stað
