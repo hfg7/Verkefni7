@@ -37,31 +37,16 @@
   margin: 4rem;
 }
 .personu{
-  margin-right: 5rem;
-  width: 100%;
+  margin: auto;
 }
 .greidslu{
-margin-left: 15rem;
-width: 100%
+ margin: auto;
+ padding: 6rem;
 }
 .takki__panta{
-  display: flex;
-  justify-content: center;
-  margin-bottom: 5rem;
-}
-.heild input{
-  margin: 10px;
-  max-width: 378px;
-  width: 100%;
-}
-.heild select{
-  margin: 10px;
-  max-width: 378px;
-  width: 100%;
-}
-.valid{
-  display: flex;
-}
-.valid select{
-  max-width: 60px;
+width: 100%;
+max-width: 7rem;
+height: 100%;
+margin: auto;
+align-items: center;
 }
