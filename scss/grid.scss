@@ -36,6 +36,7 @@
 
       &-6 {
         @include columns(6);
+        margin: 0 auto;
       }
     }
   }
@@ -47,8 +48,4 @@
       }
     }
   }
-}
-
-.offset {
-  // todo útfæra offset
 }

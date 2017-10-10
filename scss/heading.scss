@@ -3,10 +3,16 @@
   word-break: break-all;
 
   &__cover {
+    max-width: $max-width;
+    margin: 0 auto;
     padding-top: 20vh;
-    padding-left: 5vw;
+    padding-left: $gutter;
     font-size: 4rem;
     color: #fff;
+  }
+
+  &__about {
+    padding-top: 5rem;
   }
 
   &__element {

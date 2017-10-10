@@ -53,46 +53,46 @@ main {
     .col-mid-12 {
       width: 100%; }
     .col-mid-6 {
-      width: 50%; } }
+      width: 50%;
+      margin: 0 auto; } }
   @media (max-width: 400px) {
     .col-small-12 {
       width: 100%; } }
 
 .header {
-  font-family: 'Open Sans', sans-serif;
-  padding: 0; }
+  font-family: "Open Sans", sans-serif; }
   .header__index {
-    background: transparent url(media/bg.jpg) no-repeat fixed 50% 50%;
+    height: 100vh;
+    background: transparent url("media/bg.jpg") no-repeat fixed 50% 50%;
     background-size: cover;
-    box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.2);
-    height: 100vh; }
+    box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.2); }
     @media (max-width: 599px) {
       .header__index {
-        background: transparent url(media/bg.jpg) no-repeat fixed 10% 100%;
-        height: 70vh; } }
+        height: 70vh;
+        background: transparent url("media/bg.jpg") no-repeat fixed 10% 100%; } }
   .header__norm {
-    background: transparent url(media/bg-subpage.jpg) no-repeat 50% 50%;
+    height: 55vh;
+    background: transparent url("media/bg-subpage.jpg") no-repeat 50% 50%;
     background-size: cover;
-    box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.2);
-    height: 55vh; }
+    box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.2); }
     @media (max-width: 599px) {
       .header__norm {
-        background: transparent url(media/bg-subpage.jpg) no-repeat 10%;
-        background-size: cover;
-        height: 70vh; } }
+        height: 70vh;
+        background: transparent url("media/bg-subpage.jpg") no-repeat 10%;
+        background-size: cover; } }
 
 .bar {
-  display: inline-flex;
-  justify-content: space-between;
-  min-width: 100%;
-  min-height: 3rem;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 2;
-  background-color: rgba(0, 0, 0, 0.8);
+  display: inline-flex;
+  justify-content: space-between;
+  min-width: 100%;
+  min-height: 3rem;
   padding: 0 2rem;
-  border-bottom: solid black 1px; }
+  background-color: rgba(0, 0, 0, 0.8);
+  border-bottom: solid #333 1px; }
   .bar__menu {
     display: inline-flex;
     justify-content: space-between;
@@ -109,36 +109,36 @@ main {
     text-decoration: none;
     align-self: center; }
     .bar__text a:link {
-      text-decoration: none;
-      color: #fff; }
+      color: #fff;
+      text-decoration: none; }
     .bar__text a:visited {
       color: #fff; }
   .bar__logo {
-    font-size: 1.5rem;
-    font-family: 'Roboto Slab', serif;
     float: left;
+    font-family: "Roboto Slab", serif;
+    font-size: 1.5rem;
     align-self: center;
     font-weight: 600; }
     .bar__logo a:link {
-      text-decoration: none;
-      color: #fff; }
+      color: #fff;
+      text-decoration: none; }
     .bar__logo a:visited {
       color: #fff; }
 
 .footer {
-  background-color: #222;
+  font-style: "Open Sans", sans-serif;
   text-align: center;
-  font-style: 'Open Sans', sans-serif; }
+  background-color: #222; }
   .footer__top {
-    max-width: 600px;
     display: flex;
+    max-width: 600px;
+    padding: 1rem 0;
     margin: auto;
     justify-content: space-around;
-    flex-direction: row;
     font-size: 1rem;
     color: #ddd;
-    align-items: center;
-    padding: 1rem 0; }
+    flex-direction: row;
+    align-items: center; }
     .footer__top .footer--left {
       display: flex;
       flex-direction: column; }
@@ -146,24 +146,28 @@ main {
       display: flex;
       flex-direction: column; }
   .footer__bottom {
-    color: #999;
     padding: 1rem 0;
+    color: #999;
     border-top: solid #999 1px; }
 
 .heading {
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   word-break: break-all; }
   .heading__cover {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 20vh;
+    padding-left: 20px;
     font-size: 4rem;
-    color: #fff;
-    padding-left: 5vw;
-    padding-top: 20vh; }
-  .heading__element {
-    font-size: 4rem;
-    border-bottom: solid #999 1px;
-    font-family: monospace;
-    color: #363;
+    color: #fff; }
+  .heading__about {
     padding-top: 5rem; }
+  .heading__element {
+    padding-top: 5rem;
+    font-family: monospace;
+    font-size: 4rem;
+    color: #363;
+    border-bottom: solid #999 1px; }
   .heading__front-head1 {
     font-size: 2rem;
     font-weight: 400;
@@ -179,8 +183,8 @@ main {
   100% {
     opacity: 1; } }
   .heading__front-head2 {
-    font-size: 4rem;
     padding-bottom: 3rem;
+    font-size: 4rem;
     opacity: 0;
     animation: lina2 1s ease-in 1s 1 forwards; }
     @media (max-width: 599px) {
@@ -193,26 +197,50 @@ main {
   100% {
     opacity: 1; } }
 
-.Texti {
-  margin: 1.5rem; }
-  .Texti p {
+.text {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  font-family: "Open Sans", sans-serif;
+  /*  p {
+    padding-top: 9px;
     padding-bottom: 9px;
-    padding-top: 9px; }
-  .Texti__titill {
-    padding-bottom: 2rem; }
-  .Texti__segdinheild {
-    display: flex; }
-  .Texti__segdinheild p {
-    max-width: 40rem; }
-  .Texti__segdin {
-    padding-left: 5rem;
-    padding-right: 2rem;
-    padding-bottom: 4rem;
-    max-width: 70rem;
-    margin: auto; }
-  .Texti__segdin q {
+  }
+
+  &__titill {
+    padding-bottom: 2rem;
+  }
+
+  &__segdinheild {
+    //display: flex;
+  }
+
+  &__segdinheild p {
+    //max-width: 40rem;
+  }
+
+  &__segdin {
+    //max-width: 70rem;
+    //padding-bottom: 4rem;
+    //padding-right: 2rem;
+    //padding-left: 5rem;
+  //  margin: auto;
+  }
+
+  &__segdin q {
+    font-family: "Open Sans", sans-serif;
     font-size: 1.8rem;
-    font-family: open-sans; }
+  }*/ }
+  .text__merage {
+    display: inline-flex; }
+  .text p {
+    border: solid green 3px; }
+  .text blockquote {
+    position: absolute;
+    width: 600px;
+    font-size: 1.5rem;
+    font-style: italic;
+    border: solid purple 3px; }
 
 .heild {
   display: flex;
@@ -222,8 +250,8 @@ main {
   margin: auto; }
 
 .greidslu {
-  margin: auto;
-  padding: 6rem; }
+  padding: 6rem;
+  margin: auto; }
 
 .takki__panta {
   width: 100%;
@@ -237,7 +265,7 @@ main {
   padding: 6px 20px;
   margin: 0;
   overflow: hidden;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 2rem;
   color: #eee;
   text-align: center;
@@ -263,23 +291,23 @@ main {
   100% {
     opacity: 1; } }
   .button__bar {
-    border-radius: 4px;
+    padding: 4px 8px;
     font-size: 1rem;
-    padding: 4px 8px; }
+    border-radius: 4px; }
   .button__long {
     padding: 15px 100px; }
   .button__order {
     padding: 10px 120px;
     font-size: 1.2rem; }
 
-/* staðsetning fyrir animation textan í headernum*/
+/* staðsetning fyrir animation textan í headernum */
 .heading--index {
   display: flex;
   padding-top: 25vh;
   align-items: center;
   flex-direction: column; }
 
-/*Index síðan.. fyrsti hluti af henni.. 3 punktar og mynd*/
+/* Index síðan.. fyrsti hluti af henni.. 3 punktar og mynd */
 .padder {
   padding: 6rem 0; }
   @media (max-width: 600px) {
@@ -288,9 +316,9 @@ main {
 
 .info-index {
   display: flex;
+  height: 100%;
   flex-direction: column;
-  justify-content: space-around;
-  height: 100%; }
+  justify-content: space-around; }
 
 .info {
   display: flex;
@@ -302,47 +330,43 @@ main {
     width: 5%; }
   .info__text {
     display: flex;
-    flex-direction: column;
-    width: 95%; }
+    width: 95%;
+    flex-direction: column; }
   .info__img {
     max-width: 100%; }
 
-/*Prófílarnir/meðmælendur þrjár einingar*/
+/* Prófílarnir/meðmælendur þrjár einingar */
 .profill {
-  font-style: 'Open Sans', sans-serif;
-  border: solid blue 5px; }
+  font-style: "Open Sans", sans-serif; }
   .profill__content {
     display: flex;
+    padding-bottom: 6rem;
     flex-direction: column;
-    justify-content: space-between;
-    width: 100%;
-    padding-bottom: 6rem; }
+    justify-content: space-between; }
   .profill__img {
-    display: inline-block;
-    position: relative;
     max-width: 75%;
+    margin: auto;
     overflow: hidden;
-    border-radius: 50%;
-    margin: auto; }
+    border-radius: 50%; }
   .profill__text {
     text-align: center; }
     .profill__text .quote {
-      font-style: italic;
-      font-weight: bolder;
-      font-size: 1.4rem;
+      padding-top: 15px;
       padding-bottom: 15px;
-      padding-top: 15px; }
+      font-size: 1.4rem;
+      font-style: italic;
+      font-weight: bolder; }
     .profill__text .nafn {
-      font-weight: bold;
-      font-size: 1rem; }
+      font-size: 1rem;
+      font-weight: bold; }
     .profill__text .lengd {
       font-size: 0.8rem;
       color: #808080; }
 
-/*kaupatakkinn neðst á index ásamt heading*/
+/* kaupatakkinn neðst á index ásamt heading */
 .buy {
-  margin: auto;
-  padding-bottom: 6rem; }
+  padding-bottom: 6rem;
+  margin: auto; }
   .buy__content {
     display: flex;
     flex-direction: column;
@@ -350,7 +374,7 @@ main {
     align-items: center; }
   .buy__text {
     padding-bottom: 1.6rem;
-    font-family: 'Roboto Slab', serif;
+    font-family: "Roboto Slab", serif;
     font-size: 2rem;
     font-weight: bold; }
     @media (max-width: 600px) {
