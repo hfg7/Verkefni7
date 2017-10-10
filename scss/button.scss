@@ -30,19 +30,13 @@
     font-size: 2.5rem;
     opacity: 0;
     animation: lina3 1s ease-in-out 2s 1 forwards;
-}
-<<<<<<< HEAD
-    &__order {
-      padding: 4px 80px;
-      font-size: 1.2rem;
-    }
-=======
+
     @keyframes lina3 {
       0% { opacity: 0; }
       100% { opacity: 1; }
 >>>>>>> 79141a2a880425d57194ee1d6ff4396bffa3dd13
     }
-
+}
   &__bar {
     padding: 4px 8px;
     font-size: 1rem;
