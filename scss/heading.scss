@@ -1,5 +1,5 @@
 .heading {
-  font-family: "Roboto Slab", serif;
+  font-family: 'Roboto Slab', serif;
   word-break: break-all;
 
   &__cover {
@@ -16,11 +16,11 @@
   }
 
   &__element {
-    padding-top: 5rem;
-    font-family: monospace;
     font-size: 4rem;
-    color: #363;
     border-bottom: solid #999 1px;
+    font-family: monospace;
+    color: #363;
+    padding-top: 5rem;
   }
 
   &__front-head1 {
@@ -29,29 +29,29 @@
     opacity: 1;
     animation: lina1 1s ease-in 1;
 
-    @media (max-width: 599px) {
-      font-size: 1.5rem;
-    }
+      @media(max-width: 599px) {
+        font-size: 1.5rem;
+      }
 
-    @keyframes lina1 {
-      0% { opacity: 0; }
-      100% { opacity: 1; }
-    }
+        @keyframes lina1 {
+          0% {opacity: 0;}
+          100% {opacity: 1;}
+        }
   }
 
   &__front-head2 {
-    padding-bottom: 3rem;
     font-size: 4rem;
+    padding-bottom: 3rem;
     opacity: 0;
     animation: lina2 1s ease-in 1s 1 forwards;
 
-    @media (max-width: 599px) {
-      font-size: 3rem;
-    }
+      @media(max-width: 599px) {
+        font-size: 3rem;
+      }
 
-    @keyframes lina2 {
-      0% { opacity: 0; }
-      100% { opacity: 1; }
-    }
+        @keyframes lina2 {
+          0% {opacity: 0;}
+          100% {opacity: 1;}
+        }
   }
 }
