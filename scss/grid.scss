@@ -33,11 +33,13 @@
       &-12 {
         @include columns(12);
       }
+
       &-6 {
         @include columns(6);
       }
     }
   }
+
   &-small {
     @media (max-width: $width-small) {
       &-12 {
