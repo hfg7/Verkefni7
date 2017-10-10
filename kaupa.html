@@ -51,14 +51,15 @@
         <label>
           <input type="radio" name="kyn" value="Annað" required> Annað</label><br>
         </div>
-
+        <div class="sími__heim">
           Sími:<br>
-          <input type="text" name="simi"  value="555-5555" required><br>
+          <input type="text" class="sími" name="simi"  value="555-5555" required><br>
           Heimilisfang:<br>
           <input type="text" name="heimilisfang" required><br>
           <label>
             <input type="checkbox" name="postur" checked>Skrá mig á póstlista
           </label>
+          </div>
      </div>
 
      <div class="greidslu">
@@ -75,7 +76,8 @@
         <input type="text" name="kortanr"  value="5555-5555-5555-5555" required><br>
         Gildistími:<br>
         Mán:
-        <select class="gildis" name="manudur" required>
+        <div class="valid">
+          <select class="gildis" name="manudur" required>
            <option value="Jan">1</option>
            <option value="feb">2</option>
            <option value="mars">3</option>
@@ -88,9 +90,9 @@
            <option value="okt">10</option>
            <option value="nov">11</option>
            <option value="des">12</option>
-       </select>
-       Ár:
-       <select class="gildis" name="ar" required>
+         </select>
+        Ár:
+        <select class="gildis" name="ar" required>
           <option value="2017">2017</option>
           <option value="2018">2018</option>
           <option value="2019">2019</option>
@@ -98,10 +100,13 @@
           <option value="2021">2021</option>
           <option value="2022">2022</option>
           <option value="2023">2023</option>
-      </select>
+        </select>
+      </div>
     </div>
     </div>
+    <div class="takki__panta">
   <a href="#" class="button button__order">Panta</a>
+    </div>
   </form>
 </main>
 

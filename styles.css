@@ -219,18 +219,33 @@ main {
   margin: 4rem; }
 
 .personu {
-  margin: auto; }
+  margin-right: 5rem;
+  width: 100%; }
 
 .greidslu {
-  margin: auto;
-  padding: 6rem; }
+  margin-left: 15rem;
+  width: 100%; }
 
 .takki__panta {
-  width: 100%;
-  max-width: 7rem;
-  height: 100%;
-  margin: auto;
-  align-items: center; }
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem; }
+
+.heild input {
+  margin: 10px;
+  max-width: 378px;
+  width: 100%; }
+
+.heild select {
+  margin: 10px;
+  max-width: 378px;
+  width: 100%; }
+
+.valid {
+  display: flex; }
+
+.valid select {
+  max-width: 60px; }
 
 .button {
   display: inline-block;
@@ -269,7 +284,7 @@ main {
   .button__long {
     padding: 15px 100px; }
   .button__order {
-    padding: 10px 120px;
+    padding: 4px 80px;
     font-size: 1.2rem; }
 
 /* staðsetning fyrir animation textan í headernum*/
